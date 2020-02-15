@@ -17,21 +17,23 @@ const connection = mysql.createConnection({
 
 connection.connect(function(err) {
   if (err) throw err;
-  runSearch();
+  runPrompt();
 });
 
-function runSearch() {
+function runPrompt() {
   inquirer
     .prompt({
       name: "action",
       type: "rawlist",
       message: "What would you like to do?",
       choices: [
-        "Find songs by artist",
-        "Find all artists who appear more than once",
-        "Find data within a specific range",
-        "Search for a specific song",
-        "Find artists with a top song and top album in the same year"
+        "View all list of employees",
+        "View all employees by department",
+        "View all employees by manager",
+        "Add Employee",
+        "Remove Employee",
+        "Update Employee Role",
+        "Update Employee Manager"
       ]
     })
     .then(function(answer) {
