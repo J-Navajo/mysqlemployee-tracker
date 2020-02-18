@@ -10,11 +10,11 @@ CREATE TABLE employee (
   role_id INT NULL,
   manager_id INT NULL,
   PRIMARY KEY (id)
+  FOREIGN KEY (role_id),
+  FOREIGN KEY (manager_id)
 
 );
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Bob", "Harry", 001, 200);
 
 CREATE TABLE emp_role (
   id INT NOT NULL auto_increment,
