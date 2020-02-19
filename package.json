@@ -1,0 +1,26 @@
+{
+  "name": "mysqlemployee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Navajo/mysqlemployee-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6",
+    "console.table": "^0.10.0",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/J-Navajo/mysqlemployee-tracker/issues"
+  },
+  "homepage": "https://github.com/J-Navajo/mysqlemployee-tracker#readme"
+}
