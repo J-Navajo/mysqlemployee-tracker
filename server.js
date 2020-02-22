@@ -35,7 +35,6 @@ function runEmployee() {
         "Add Department",
         "Add Employee Role",
         "Update Employee Role",
-        // "Update Employee Manager"
         "Exit"
       ]
     })
